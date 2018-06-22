@@ -1,0 +1,19 @@
+
+eureka:
+  instance:
+     leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+
+server:
+ port: 1002
+
+spring:
+ application:
+  name: vic-ms-configService  # Identify this application
+ cloud:
+  config:
+   server:
+    git:
+     uri: C:/Users/vcalvoma/workspaceSantander2018/configuracionservicios
